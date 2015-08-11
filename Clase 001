@@ -1,0 +1,16 @@
+// México D.F. a 10 de agosto de 2015
+
+//FUNDAMENTOS DE PROGRAMACIÓN - CMP 2220 001
+
+//CLASE 1
+// COMUNICACIÓN CON LA CONSOLA
+// Este es un código de José Mondragón
+// Este es un código de prueba
+/* Aquí comienzo un comentario que puede ser
+muuuuuy largo y luego lo cierro con */
+
+print("HOLA, ESTOY PROBANDO LA CONSOLA");
+
+//Nnombre de la función
+//dentro de los asteriscos los datos de la función
+// ; <---esto significa final de sentencia programática
