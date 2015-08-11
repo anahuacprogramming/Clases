@@ -1,0 +1,19 @@
+//Propiedades del lienzo
+size(800,600);
+background(255);
+
+//Comunicación con la consola
+print("ESTOY DIBUJANDO, WIIIIII!");
+
+fill(129,109,196);
+rectMode(CENTER);
+rect(400, 300, 100, 100, 10);
+fill(255,0,0);
+ellipse(200,200, 100,50);
+
+
+//Investigar las siguientes funciones reservadas
+//line, strokeWeight, stroke, arc, quad, triangle
+
+
+
