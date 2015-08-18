@@ -1,0 +1,31 @@
+//PROGRAMACIÓN ESTRUCTURADA Y OBJETOS - CMP 2222 001
+//Profesor José Manuel Mondragón Cruz
+//PROCESSING
+//17 agosto de 2015
+// Sesión 003 tipos, variables y palabras reservadas
+
+int suma= 35+2;
+
+String amiga = "Marian";
+
+String amigo = "Pedro";
+
+String amigos= amiga+" es amiga de "+amigo;
+
+
+float incremento=200;
+
+
+void setup() {
+  size(600, 400);
+  background(255);
+}
+
+void draw() {
+
+  incremento -= 1;
+
+  fill(0, 50);
+  rect(mouseX, mouseY, incremento, incremento);
+  print(incremento);
+}
