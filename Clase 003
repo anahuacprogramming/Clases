@@ -1,0 +1,47 @@
+
+
+
+size(720, 480);// CAmbia el tamaño del lienzo
+background(255);
+
+fill(128);
+ellipse(width/2, height/2, 200, 200);// dibuja un círculo
+
+
+fill(#B7A500);// RGB
+rectMode(CENTER);
+rect(width/2, height/2, 100, 100);
+
+// line, arc, quad, point, triangle.
+
+stroke(0);
+strokeWeight(10);
+line(0, 0, width, height);
+
+strokeWeight(0.5);
+//noFill();
+fill(#FFE705);
+arc(width/2, height/2, 50,50, 0, TWO_PI-QUARTER_PI);
+
+arc(700, 400, 100,100, PI, TWO_PI-QUARTER_PI);
+
+noStroke();
+rect(200,200, 100,100, 50, 0, 50, 0);// crea un cuadrado con algunas esquinas redondeadas
+
+fill(#FF0516, 50);
+ellipse(width/2, height/2, height, height);
+
+
+fill(#FF0516);
+rect(100, 100, 50,50);
+
+stroke(#75FF05);
+line(75, 125, 127, 75);
+
+arc(400, 400, 100,100, (-PI)+QUARTER_PI, PI);
+
+//rotateY(.75);
+rect(300, 300, 100, 100);
+
+
+
