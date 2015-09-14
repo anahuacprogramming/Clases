@@ -1,0 +1,48 @@
+float circleWidth;
+float backgroundValue;
+float ellipseColor;
+
+void setup() {
+  size(300, 300);
+  circleWidth =   50;
+  backgroundValue = 120;
+  ellipseColor= 255;
+}
+
+
+void draw() {
+  background(backgroundValue);
+  noStroke();
+  fill(255,0,0, ellipseColor);
+  ellipse(150, 150, circleWidth, circleWidth);
+  
+  if (keyPressed) {
+    if (key == 'a') {
+      backgroundValue ++;
+      ellipseColor--;
+    } else if (key == 's') {
+      backgroundValue --;
+      ellipseColor++;
+    }
+    // ensure backgroundValue is constrianed between 0 and 255
+    backgroundValue = constrain(backgroundValue,0,255);
+  }
+  
+}
+
+
+void keyPressed() {
+  if (key == 'c') {
+    circleWidth = 150;
+  }
+  
+  println("Pressed " + key + " " + keyCode);
+}   
+
+void keyReleased() {
+  if (key == 'c') {
+    circleWidth = 50;
+  }
+  
+  println("Released " + key + " " + keyCode);
+}
