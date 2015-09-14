@@ -1,0 +1,47 @@
+
+
+
+//LAS CONDICIONANTES
+/* 
+ Una condición es una estructura que le permite 
+ a tu programa tomar una decisión acerca de qué 
+ código ejecutar dependiendo de las condiciones.
+ Las declaraciones "if", "else", y “switch case” 
+ son los elementos principales
+ para crear estructuras de condicionales.
+ 
+ * for (){} es una estructura de iterativa 
+ que será explicada con más detalle .
+ */
+
+int x= (int)random(100);
+
+
+if (x>50) {
+  fill(0);
+  ellipse(10, 10, 10, 10);
+  print("David");
+} else {
+  rect(10, 10, 10, 10);
+  print("Pedro");
+}
+
+
+
+for (int i=0; i < 100; i++ ) {
+
+  int myN=i%3;
+  noStroke();
+    
+  switch(myN) {
+   
+  case 0:
+    rect(i, 0, 1, 10);
+    break;
+    
+    case 1:
+    rect(i, 10, 1, 10);
+    break;
+  }
+}
+
