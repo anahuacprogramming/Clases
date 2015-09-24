@@ -1,0 +1,30 @@
+int densidad= 300;
+int[] posX;
+
+
+void setup() {
+  posX= new int[densidad];
+  size(600, 400);
+  background(255);
+}
+
+
+void draw() {
+  //background(255);
+  for (int i=0; i<densidad; i++) {
+
+    if (i<150) {
+      fill(0, 255, 0);
+    } else if (i>150) {
+      fill(255, 0, 0);
+    }
+
+    posX[i]= posX[i]+i;
+    ellipse(posX[i], i*2, 10, 10);
+    if (posX[i]>width) {
+      posX[i]=0;
+    }
+  }
+  fill(255, 50);
+  rect(0, 0, width, height);
+}
