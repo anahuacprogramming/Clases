@@ -1,0 +1,67 @@
+int universo= 100;
+int[] pX= new int[universo];
+int[] pY= new int[universo];
+
+float count;
+int count2;
+
+void setup() {
+  //background(255);
+  size(400, 300);
+  count=0;
+  println(count);
+  for (int i=0; i<universo; i++) {
+    pX[i]= (width/2)+(int)random(-20, 20);
+    pY[i]= (height/2)+(int)random(-20, 20);
+  }
+}
+
+
+void draw() {
+  //background(255);
+  strokeWeight(0.1);
+  noFill();
+  count+=0.05;
+  
+
+  float osc=sin(count)+1;
+
+  //println(osc);
+
+  //rect(0, 0, 10, osc*50);
+
+
+
+
+  for (int i=0; i<universo; i++) {
+    float a= random(1);
+    float b= random(1);
+
+    if (a>.5) {
+      pX[i]= pX[i]+1;
+    } else if (a<.5) {
+      pX[i]= pX[i]-1;
+    }
+
+    if (b>.5) {
+      pY[i]= pY[i]+1;
+    } else if (b<.5) {
+      pY[i]= pY[i]-1;
+    }
+
+
+    //point(pX[i], pY[i]);
+
+    for (int j=0; j<universo; j++) {
+      float myDist= dist(pX[i], pY[i], pX[j], pY[j]);
+      if (myDist< osc*10) {
+
+        line(pX[i], pY[i], pX[j], pY[j]);
+
+        //ellipse(pX[i], pY[i], 4, 4);
+      }
+    }
+  }
+  fill(255,60);
+  rect(0,0,width,height);
+}
