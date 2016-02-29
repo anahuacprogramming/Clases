@@ -1,9 +1,4 @@
 /*
- * Creative Coding
- * Week 2, 05 - Moving Patterns 1
- * by Indae Hwang and Jon McCormack
- * Copyright (c) 2014 Monash University
- *
  * This sketch builds on the previous sketches, drawing shapes based on the
  * current framerate. The movement of individual shapes combine to create a
  * gestalt field of motion. Use the arrow keys on your keyboard to change the
